@@ -1,4 +1,4 @@
 LoLHelper
 =========
 
-League Of Legends helper ap
+League Of Legends helper app
