@@ -74,7 +74,7 @@ public class PostGame extends ActionBarActivity {
     }
     
     public void build(View view) {
-    	Intent intent = new Intent(this, Build.class);
+    	Intent intent = new Intent(this, BuildScreen.class);
     	startActivity(intent);
     }
     
