@@ -14,34 +14,53 @@
         android:id="@+id/button1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_weight="1"
         android:onClick="ingame"
         android:text="In Game" />
 
-    
-    <RelativeLayout
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="2">
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="2"
+	        android:orientation="horizontal" >
+	        	<LinearLayout
+	        	    android:layout_width="match_parent"
+		            android:layout_height="match_parent"
+		            android:layout_weight="4"
+		            android:orientation="vertical" ></LinearLayout>
 
-                <Button
-        android:id="@+id/button2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="matchinfo"
-        android:text="Match Info" />
+		       <LinearLayout
+		           android:layout_width="match_parent"
+		           android:layout_height="match_parent"
+		           android:layout_weight="1"
+		           android:orientation="vertical" >
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="buildguides"
-        android:text="Build Guides" />
-    </RelativeLayout>
+		           <Button
+		               android:id="@+id/button3"
+		               android:layout_width="match_parent"
+		               android:layout_height="0dp"
+		               android:layout_centerVertical="true"
+		               android:layout_weight="1"
+		               android:onClick="buildguides"
+		               android:text="Build Guides" />
+
+		           <Button
+		               android:id="@+id/button2"
+		               android:layout_width="match_parent"
+		               android:layout_height="0dp"
+		               android:layout_centerVertical="true"
+		               android:layout_weight="1"
+		               android:onClick="matchinfo"
+		               android:text="Match Info" />
+		       </LinearLayout>
+
+	    </LinearLayout>
     
     <Button
         android:id="@+id/button4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_weight="1"
         android:onClick="championselect"
         android:text="Champion Select" />
 
@@ -49,6 +68,7 @@
         android:id="@+id/button5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_weight="1"
         android:onClick="postgame"
         android:text="Post Game" />
 
@@ -56,6 +76,7 @@
         android:id="@+id/button6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_weight="1"
         android:onClick="generalinfo"
         android:text="General Info" />
 
@@ -63,6 +84,8 @@
         android:id="@+id/button7"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_weight="1"
         android:onClick="options"
         android:text="Options" />
+
 </LinearLayout>
