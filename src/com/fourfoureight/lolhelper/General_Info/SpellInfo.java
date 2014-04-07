@@ -1,4 +1,3 @@
-
 public class SpellInfo {
 
 private String name;
