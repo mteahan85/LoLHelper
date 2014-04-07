@@ -1,6 +1,7 @@
-
 public class ChampionDatabase {
 
+	
+	private ChampionInfo champions = new ChampionInfo[118];
 	
 	public ChampionDatabase()
 	{
@@ -21,9 +22,11 @@ public class ChampionDatabase {
 		//giant array?
 		
 		
-		
 	}
 	
-	
+	public ChapmpionInfo[] getChampList()
+	{
+		return champions;
+	}
 	
 }
